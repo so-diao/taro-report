@@ -1,12 +1,12 @@
 import '@tarojs/async-await'
 import Taro, { Component } from '@tarojs/taro'
-import Entry from './view/entries/posts'
+import Entry from './view/index'
 
 class App extends Component {
 
 	config = {
 		pages: [
-			'view/entries/posts',
+			'view/index',
 		],
 		window: {
 			backgroundTextStyle: 'dark',

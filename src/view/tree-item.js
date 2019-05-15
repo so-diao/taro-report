@@ -1,13 +1,20 @@
+
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 
 
-export default class Product extends Component {
+export default class TreeItem extends Component {
+
     render() {
+        const node = this.props.node || {}
+
         return (
             <View>
-                Product
+                {
+                    JSON.stringify(node)
+                }
             </View>
         )
     }
 }
+
