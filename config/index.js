@@ -1,5 +1,4 @@
 const path = require('path')
-const env = process.env.npm_lifecycle_event.split(':')[1]
 const isDev = process.env.NODE_ENV === 'development'
 
 const config = {
@@ -12,7 +11,7 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist-' + env,
+  outputRoot: `dist/${process.env.TARO_ENV}`,
   alias: {
     '@': path.join(__dirname, '../src')
   },

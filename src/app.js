@@ -7,6 +7,7 @@ class App extends Component {
 	config = {
 		pages: [
 			'view/index',
+			'view/posts',
 		],
 		window: {
 			backgroundTextStyle: 'dark',
