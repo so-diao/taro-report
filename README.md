@@ -1,14 +1,8 @@
-`src/view/tree.js`
 
 #### 问题说明
-map循环中向子组件传参异常，可以看`src/view/tree.js`，正常的预期结果应该是打印出
-```js
-{
-    type: '0',
-    name: '-2'
-}
-```
-然而子组件中props为undefined，并没有收到父组件传过来的node参数
+`this.$router.params`中会多出一个与path一致的字段
+如图，`params`应该是空的，却多出一个`/view/index`
+![图片](https://user-images.githubusercontent.com/24741025/58680436-4d80ce00-839a-11e9-9879-ed908699bbce.png)
 
 
 #### 复现命令
