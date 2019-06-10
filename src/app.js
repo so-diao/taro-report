@@ -1,13 +1,13 @@
 import '@tarojs/async-await'
 import Taro, { Component } from '@tarojs/taro'
-import Entry from './view/index'
+import Index from './view/index'
+import 'taro-ui/dist/style/index.scss'
 
 class App extends Component {
 
 	config = {
 		pages: [
-			'view/index',
-			'view/posts',
+			'view/index'
 		],
 		window: {
 			backgroundTextStyle: 'dark',
@@ -20,7 +20,7 @@ class App extends Component {
 
 	render () {
 		return (
-			<Entry/>
+			<Index/>
 		)
 	}
 }

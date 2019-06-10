@@ -1,15 +1,12 @@
 
 #### 问题说明
-`this.$router.params`中会多出一个与path一致的字段
-
-如图，`params`应该是空的，却多出一个`/view/index`
-
-![图片](https://user-images.githubusercontent.com/24741025/58680436-4d80ce00-839a-11e9-9879-ed908699bbce.png)
-
+`Swiper`组件衔接(circular)模式克隆的节点没有带上事件。
+图片组件上有`onLoad`事件，`Swiper`组件衔接模式需要克隆头/尾的图片，而克隆的图片上没有`onLoad`事件。
+小程序没问题，仅h5上异常。
 
 #### 复现命令
 ```base
 cnpm i
-npm run dev:weapp
+npm run dev:h5
 ```
 
