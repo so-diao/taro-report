@@ -98,7 +98,7 @@ const config = {
     esnextModules: ['taro-ui']
   },
   env: {
-    
+    PAGES: JSON.stringify(['view/index'])
   }
 }
 
